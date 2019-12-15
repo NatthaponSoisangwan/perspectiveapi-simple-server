@@ -1,9 +1,8 @@
 # A Simple Server for the Perspective API
 
-A simple demo server for use. It serves some static content from a specified directory, and
-provides proxy to the API in a way that enables the API-key to be kept private.
+This is a separate server from the Django backend for the Feedz app. This server is called from the frontend, and checks to see whether the user-submitted review contains profane language.
 
-## Quickly trying it out
+## Installation
 
 ```
 # Install dependencies
@@ -16,7 +15,9 @@ yarn run build
 yarn run start-dev
 ```
 
-Now you can visit `http://localhost:8080/` and you should get a "hello world!" page.
+After installing, you only need to ```yarn run start-dev``` to run it.
+
+To check that it is working, visit `http://localhost:8080/` and you should get a "hello world!" page.
 
 ## Configuring the server
 
